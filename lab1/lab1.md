@@ -44,7 +44,8 @@
     Наконец, мы сравниваем ссылки logger1 и logger2 с помощью оператора ===,
     который возвращает true, так как они ссылаются на один и тот же объект.
 
-```class Logger private constructor() {
+``` kotlin
+    class Logger private constructor() {
         init {}
         fun log (...){}
         companion object {
