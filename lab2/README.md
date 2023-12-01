@@ -11,7 +11,8 @@
     всех компонентов. Класс MainComponent реализует интерфейс Component,
     возвращает некоторую строку, представляя исходный компонент.
 
-```interface Component {
+``` kotlin
+    interface Component {
         fun render(): String
         }
         class MainComponent : Component {
@@ -75,7 +76,8 @@
     Интерфейс Observer определяет метод update, который вызывается при
     возникновении события.
 
-```interface Observer {
+``` kotlin
+    interface Observer {
         fun update(message: String)
     }
     interface Observable {
@@ -117,7 +119,8 @@
     display переопределяется для отображения имени составного компонента и
     рекурсивного вызова функции display на его дочерних компонентах.
 
-```class CompositeComponent(name: String) : Component(name) {
+``` kotlin
+    class CompositeComponent(name: String) : Component(name) {
         private val components //list
         fun add(...)
         fun remove(...)
